@@ -13,7 +13,7 @@ def query_stabilitydiff(payload, headers):
 
 # interface
 with st.sidebar:
-    "[View the source code](https://github.com/dmitrimahayana/Py-LangChain-ChatGPT-VirtualAssistance/blob/main/03_Streamlit_Stable_Diff.py)"
+    "[View the source code](https://github.com/Taoheed-O/Image_Chatbot)"
 
 st.title("💬 Chatbot - Text to Image")
 st.caption("🚀 A Streamlit chatbot powered by Stable Diffusion")
@@ -52,4 +52,3 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "assistant", "content": msg, "prompt": prompt, "image": image})
     st.chat_message("assistant").write(msg)
     st.chat_message("assistant").image(image, caption=prompt, use_column_width=True)
-    
