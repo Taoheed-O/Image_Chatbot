@@ -21,7 +21,6 @@ def query_stabilitydiff(payload, headers):
 
 # interface
 with st.sidebar:
-    "[View the source code](https://github.com/Taoheed-O/Image_Chatbot)"
     info = option_menu("Info", ["App", "About the app","About the Developer"],
                     icons=['joystick', 'book', 'person lines fill'],
                     menu_icon="cast", default_index=0,
