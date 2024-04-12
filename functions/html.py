@@ -7,7 +7,7 @@ ABOUT_APP = '''
                 It takes text input and converts it into an image that covers the description given in the text.
                     </ul>
                     <i>NB: Test the app automatically here:</i>
-                    <a href="https://share.streamlit.io/taoheed-o/bank_statement_analyzer/main/main.py" target="_blank">Test me..</a>
+                    <a href="https://imagechatbot.streamlit.app/" target="_blank">Test me..</a>
                     <br/>
                     <i> Check the full code on github:</i>
                     <a href="https://github.com/Taoheed-O/Image_Chatbot" target="_blank">Check me out on github</a>
