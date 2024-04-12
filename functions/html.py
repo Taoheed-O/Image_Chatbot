@@ -1,42 +1,16 @@
 ABOUT_APP = '''
         <div class="nice-div">
                         </br>
-            <h1> Bank Statement Analyzer</h1>
+            <h1> Image Chatbot</h1>
             <h2> About: </h2>
-                This application interface is built with streamlit.
-                App Features include:
-                    <ul>
-                        <li> Visualizations. </li>
-                        <li> Reading pdf of bank statements and displaying the tabular or JSON format of the transactions. </li>
-                        <li> Flexibility in choosing views and amount of information. </li>
-                        <li> The app is built to handle different banks and account types. </li>
-                        <li> The app can handle both protected and non-protected pdfs. </li>
-                    </ul>
-                The streamlit library is used for building the interface of the app.
-                        <h2>Files and Folders:</h2>
-                There are multiple files and folders in this project:
-                <br/>
-                <b>FOLDERS</b>
-                    <li><b>functions</b></li>
-                        This folder contains all the necessary individual functions of the app:
-                            <ul>
-                                <li>html</li>
-                                    This function contains all the necessary html codes for the app interface.
-                                <li>display_table</li>
-                                    This function contains the codes for displaying the tables and visualizations of the app.
-                            </ul>
-                    <li><b>bank_statements_cleaner</b></li>
-                            This folder contains the necessary individual codes to extract the data for each available bank.
-                    <b>FILES</b>
-                    <ul>
-                        <li><b>main</b></li>
-                            This is the main file that contains the streamlit interface code and the calling of the various functions in the functions folder.
+                This application interface is built with streamlit and is powered by stable diffusion.
+                It takes text input and converts it into an image that covers the description given in the text.
                     </ul>
                     <i>NB: Test the app automatically here:</i>
                     <a href="https://share.streamlit.io/taoheed-o/bank_statement_analyzer/main/main.py" target="_blank">Test me..</a>
                     <br/>
                     <i> Check the full code on github:</i>
-                    <a href="https://github.com/Taoheed-O/Bank_Statement_Analyzer.git" target="_blank">Check me out</a>
+                    <a href="https://github.com/Taoheed-O/Image_Chatbot" target="_blank">Check me out on github</a>
         </div>'''
 
 
