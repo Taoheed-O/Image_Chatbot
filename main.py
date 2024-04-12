@@ -15,8 +15,8 @@ def query_stabilitydiff(payload, headers):
 with st.sidebar:
     "[View the source code](https://github.com/Taoheed-O/Image_Chatbot)"
 
-st.title("💬 Chatbot - Text to Image")
-st.caption("🚀 A Streamlit chatbot powered by Stable Diffusion")
+st.title("💬 Image Chatbot - Convert your text to Image")
+st.caption("🚀 A Streamlit image chatbot powered by Stable Diffusion")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
