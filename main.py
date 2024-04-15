@@ -79,7 +79,7 @@ elif info == "App":
         st.chat_message("user").write(prompt)
 
         # Query Stable Diffusion
-        headers = {"Authorization": f"Bearer {st.secrets.hugging_face_token.api_key}"}
+        headers = {"Authorization": f"Bearer {st.secrets.HUGGING_FACE_TOKEN_API_KEY}"}
         image_bytes = query_stabilitydiff({
             "inputs": prompt,
         }, headers)
