@@ -84,13 +84,23 @@ elif info == "App":
             "inputs": prompt,
         }, headers)
 
-        # Return Image
         image = Image.open(io.BytesIO(image_bytes))
         msg = f'here is your image... "{prompt}"'
+        # Convert image to bytes
+        img_bytes = io.BytesIO()
+        image.save(img_bytes, format='JPEG')
+        img_bytes = img_bytes.getvalue()
 
         # Show Result
         st.session_state.messages.append({"role": "assistant", "content": msg, "prompt": prompt, "image": image})
         st.chat_message("assistant").write(msg)
         st.chat_message("assistant").image(image, caption=prompt, use_column_width=True)
+        # download the image
+        if image:
+            download_button = st.download_button(label="Download Image", data=img_bytes, file_name=prompt, mime="image/jpeg")
+            if download_button:
+                st.success("Downloaded!", icon="✅")
+            
 else:
     pass
+
