@@ -70,7 +70,7 @@ elif info == "App":
 
     if prompt := st.chat_input():
 
-        if not st.secrets.hugging_face_token.api_key:
+        if not st.secrets["hugging_face_token_api_key"]:
             st.info("Please add your Hugging Face Token to continue.")
             st.stop()
 
