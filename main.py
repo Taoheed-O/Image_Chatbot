@@ -99,7 +99,7 @@ elif info == "App":
         if image:
             download_button = st.download_button(label="Download Image", data=img_bytes, file_name=prompt, mime="image/jpeg")
             if download_button:
-                st.success("Downloaded!", icon="✅")
+                st.success("Image Downloaded!", icon="✅")
             
 else:
     pass
