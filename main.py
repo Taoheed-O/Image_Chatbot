@@ -7,11 +7,14 @@ from functions import html
 
 
 
+# Initializing some external variables...
 style = html.STYLE
 about_dev = html.ABOUT_DEVELOPER
 about_app = html.ABOUT_APP
 link = html.LINK
 
+
+#...................
 def query_stabilitydiff(payload, headers):
     API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
     response = requests.post(API_URL, headers=headers, json=payload)
@@ -35,7 +38,7 @@ with st.sidebar:
                     )
     
 
-    # app info
+# App info
 if info == "About the app":
     st.markdown(""" <style> .font {
     font-size:30px ; font-family: 'Cooper Black'; color: black;} 
@@ -44,7 +47,7 @@ if info == "About the app":
     st.markdown(style, unsafe_allow_html= True)
     st.markdown(about_app, unsafe_allow_html=True)
 
-
+# About
 elif info == "About the Developer":
     st.markdown(""" <style> .font {
     font-size:30px ; font-family: 'Cooper Black'; color: black;} 
@@ -53,7 +56,7 @@ elif info == "About the Developer":
     st.markdown(style, unsafe_allow_html= True)
     st.markdown(about_dev, unsafe_allow_html=True)
     st.markdown(link, unsafe_allow_html=True)
-
+# App
 elif info == "App":
     st.title("💬 Image Chatbot - Convert your text to Image")
     st.caption("🚀 A Streamlit image chatbot powered by Stable Diffusion")
@@ -103,4 +106,4 @@ elif info == "App":
             
 else:
     pass
-
+#................
