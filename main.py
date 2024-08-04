@@ -21,11 +21,11 @@ def query_stabilitydiff(payload, headers):
 
 # interface
 with st.sidebar:
-    info = option_menu("Info", ["App", "About the app","About the Developer"],
+    info = option_menu("Info", ["App", "About the app", "About the Developer"],
                     icons=['joystick', 'book', 'person lines fill'],
                     menu_icon="cast", default_index=0,
                     styles={
-                        "container": {"padding": "5!important", "background-color": "white"},
+                        "container": {"padding": "5!important", "background-color": "white", "color": "black"},
                         "icon": {"color": "black", "font-size": "25px"},
                         "nav-link": {"font-size": "16px", "text-align": "left", "margin": "0px",
                                     "--hover-color": "orange"},
